@@ -15,6 +15,7 @@ body{
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    transition: background 0.3s ease;
 }
 
 .container{
@@ -58,6 +59,7 @@ body{
     text-transform: uppercase;
     margin-top: 10px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .container button.hidden{
@@ -207,4 +209,246 @@ body{
 
 .container.active .toggle-right{
     transform: translateX(200%);
+}
+
+.theme-selector {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 600px;
+    width: 90%;
+}
+
+.theme-selector-content h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.color-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.color-option {
+    width: 80px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.color-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.color-option.active {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.8), 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.color-option span {
+    color: white;
+    font-weight: 600;
+    font-size: 10px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+body.theme-ocean {
+    background: linear-gradient(to right, #E3F2FD, #BBDEFB);
+}
+
+body.theme-ocean .toggle {
+    background: linear-gradient(to right, #2196F3, #1976D2);
+}
+
+body.theme-ocean .container button {
+    background-color: #1976D2;
+}
+
+body.theme-sunset {
+    background: linear-gradient(to right, #FFF3E0, #FFE0B2);
+}
+
+body.theme-sunset .toggle {
+    background: linear-gradient(to right, #FF6B6B, #FF8E53);
+}
+
+body.theme-sunset .container button {
+    background-color: #FF8E53;
+}
+
+body.theme-forest {
+    background: linear-gradient(to right, #E8F5E8, #C8E6C9);
+}
+
+body.theme-forest .toggle {
+    background: linear-gradient(to right, #4CAF50, #2E7D32);
+}
+
+body.theme-forest .container button {
+    background-color: #2E7D32;
+}
+
+body.theme-purple {
+    background: linear-gradient(to right, #F3E5F5, #E1BEE7);
+}
+
+body.theme-purple .toggle {
+    background: linear-gradient(to right, #9C27B0, #7B1FA2);
+}
+
+body.theme-purple .container button {
+    background-color: #7B1FA2;
+}
+
+body.theme-gold {
+    background: linear-gradient(to right, #FFF8E1, #FFECB3);
+}
+
+body.theme-gold .toggle {
+    background: linear-gradient(to right, #FFD700, #FFA500);
+}
+
+body.theme-gold .container button {
+    background-color: #FFA500;
+}
+
+@media (max-width: 768px) {
+    .color-options {
+        gap: 8px;
+    }
+    
+    .color-option {
+        width: 70px;
+        height: 40px;
+    }
+    
+    .color-option span {
+        font-size: 9px;
+    }
+    
+    .theme-selector {
+        margin-top: 20px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .color-options {
+        gap: 6px;
+    }
+    
+    .color-option {
+        width: 60px;
+        height: 35px;
+    }
+    
+    .color-option span {
+        font-size: 8px;
+    }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer-text i {
+    color: #512da8;
+    font-size: 16px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+body.theme-ocean .footer-text i {
+    color: #1976D2;
+}
+
+body.theme-sunset .footer-text i {
+    color: #FF8E53;
+}
+
+body.theme-forest .footer-text i {
+    color: #2E7D32;
+}
+
+body.theme-purple .footer-text i {
+    color: #7B1FA2;
+}
+
+body.theme-gold .footer-text i {
+    color: #FFA500;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 12px 0;
+    }
+    
+    .footer-text {
+        font-size: 13px;
+    }
+    
+    .footer-text i {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-text {
+        font-size: 12px;
+    }
+    
+    .footer-text i {
+        font-size: 14px;
+    }
 }
