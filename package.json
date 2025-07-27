@@ -1,0 +1,31 @@
+{
+  "name": "animated-login-page",
+  "version": "1.0.0",
+  "description": "Uma página de login animada com múltiplos temas personalizáveis",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Projeto estático - não requer build'",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "login",
+    "animation",
+    "css",
+    "javascript",
+    "html",
+    "frontend",
+    "responsive"
+  ],
+  "author": "Elizeu Santos",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/Animated-Login-Page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seu-usuario/Animated-Login-Page/issues"
+  },
+  "homepage": "https://github.com/seu-usuario/Animated-Login-Page#readme"
+} 
