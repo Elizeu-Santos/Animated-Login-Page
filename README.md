@@ -124,14 +124,6 @@ Animated-Login-Page/
 - [ ] Adicionar mais temas
 - [ ] Criar versão dark mode
 - [ ] Adicionar testes automatizados
-
-## 👨‍💻 Desenvolvido por
-
-**Elizeu Santos**
-
-- 💻 Desenvolvedor Front-end
-- 📚 Sempre aprendendo novas tecnologias
-
 ---
 
 <div align="center">
