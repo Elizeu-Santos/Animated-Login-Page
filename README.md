@@ -46,13 +46,13 @@ Este é um projeto de **prática de front-end** que desenvolvi para aprimorar mi
 <div align="center">
 
 ### Tela Principal - Login
-![Tela de Login](assets/images/image%20(1).png)
+[![Tela de Login](assets/images/image%20(1).png)](https://animatedloginpagejs.netlify.app/)
 
 ### Tela de Cadastro
-![Tela de Cadastro](assets/images/image%20(2).png)
+[![Tela de Cadastro](assets/images/image%20(2).png)](https://animatedloginpagejs.netlify.app/)
 
 ### Seletor de Temas
-![Seletor de Temas](assets/images/image%20(3).png)
+[![Seletor de Temas](assets/images/image%20(3).png)](https://animatedloginpagejs.netlify.app/)
 
 </div>
 
